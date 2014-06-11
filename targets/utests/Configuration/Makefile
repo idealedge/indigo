@@ -21,7 +21,7 @@ include ../../../init.mk
 MODULE := Configuration_utest
 TEST_MODULE := Configuration
 
-DEPENDMODULES := AIM SocketManager indigo loci BigList cjson timer_wheel
+DEPENDMODULES := AIM SocketManager indigo BigList cjson timer_wheel
 
 # These indicate Linux specific implementations to be used for
 # various features
@@ -32,6 +32,7 @@ GLOBAL_CFLAGS += -DINDIGO_MEM_STDLIB
 GLOBAL_CFLAGS += -g
 GLOBAL_CFLAGS += -DCONFIGURATION_CONFIG_INCLUDE_UCLI=0
 GLOBAL_CFLAGS += -DSOCKETMANAGER_CONFIG_INCLUDE_UCLI=0
+GLOBAL_CFLAGS += -DNO_LOCI_TYPES
 
 GLOBAL_LINK_LIBS += -lpthread -lpcap -lm
 

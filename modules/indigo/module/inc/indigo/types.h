@@ -116,6 +116,11 @@ typedef indigo_cookie_t indigo_flow_id_t;
 
 #if defined(NO_LOCI_TYPES)
 
+#define OF_MAC_ADDR_BYTES 6
+typedef struct of_mac_addr_s {
+   uint8_t addr[OF_MAC_ADDR_BYTES];
+} of_mac_addr_t;
+
 /**
  * OpenFlow port number
  */

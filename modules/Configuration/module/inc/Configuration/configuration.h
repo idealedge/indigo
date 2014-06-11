@@ -32,7 +32,7 @@
 #include "configuration_config.h"
 
 #include <indigo/error.h>
-#include <loci/loci.h>
+#include <indigo/indigo.h>
 #include <cjson/cJSON.h>
 
 /**
